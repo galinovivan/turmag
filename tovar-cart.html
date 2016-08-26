@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title></title>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="call" class="modal fade">
+	<div class="modal-dialog modal-xs">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					Заказать обратный звонок
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" id="callForm">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" value="Заказать">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="container-fluid hidden-xs hidden-sm">
+<div class="row hidden-xs header-row hidden-sm">
+<div class="col-lg-3 col-md-3 col-sm-3 logo">
+    <div class="logo-container">
+        <a href="index.html" class="pull-left"><img src="img/logo1.png" class="img-responsive"></a></div>
+<h2 class="pull-left">Турмаг</h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 contact">
+<img src="img/phone.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h2>+7(812) 123-45-67</h2>
+<a href="#call" data-toggle="modal"><small>заказать бесплатный звонок</small></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 work-time">
+<img src="img/clock1.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h5>Режим работы</h5>
+<span>ПН-ПТ С 10:00-20:00</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="form-group">
+<form role="form" style="margin-top: 10px;">
+<input type="search" class="form-control">
+</form>
+</div>
+<div class="" style="margin-right: 7%;">
+<a href="log.html" style="display: block; margin-top: 4px;" ><img src="img/search-logo-people.png" class="img-responsive"></a>
+</div>
+<div class="cart-sticker">
+<a href="cart.html" style="display: block;"><img src="img/search-icon.png" class="img-responsive"></a>
+</div>
+
+
+</div>
+
+
+</div>
+</header>
+<div class="container-fluid slide-menu-container">
+<div class="row visible-xs header-mobile visible-sm">
+<div class="cont">
+<div class="toggle-menu" id="toggle-btn">
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+</div>
+<div class="logo-mobile clearfix">
+
+<div>
+<img src="img/logo-mobile.png">
+
+<div class="">
+<h2 class="pull-left">Турмаг</h2>
+</div>
+</div>
+</div>
+<div class="cart-mobile sticker-mobile">
+	 <a href="cart.html"><img src="img/mobile-cart.png" class="img-responsive"></a>
+</div>
+</div>
+</div>
+
+
+
+		<ul class="left-menu visible-xs visible-sm" id="slide-menu">
+		<div class="btn-close pull-right" id="btn-menu-close"><img src="img/close.png"></div>
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class=""><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			<li class=""><a href="#">Одежда и обувь</a></li>
+			<li class=""><a href="#">Аксессуары</a></li>
+            
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+
+		</ul>
+
+</div>
+<script type="text/javascript" src="script/menu.js"></script>
+
+<div class="container-fluid">
+
+<div class="nav-cont btn-group btn-group-justified hidden-xs hidden-sm">      
+	<nav class="nav-cont-1">
+		<ul class="nav nav-justified navbar ">
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class="hidden-md"><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			
+			<li class="hidden-md"><a href="#">Аксессуары</a></li>
+			<li class="arrow dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">еще<i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 1px;"></i>
+</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">что то еще</a></li>
+
+
+               <li class="visible-md"><a href="#">Одежда и обувь</a></li>
+			<li class="visible-md"><a href="#">Аксессуары</a></li>
+               <li class="visible-md"><a href="#">Спальные мешки</a></li>
+                
+                </ul>
+            
+            
+            </li>
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+		</ul>
+	</nav>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+
+<ul class="breadcrumb breadcrumb-catalog hidden-xs hidden-sm">
+  <li><a href="#"><span class="glyphicon glyphicon-home"></span></a> <span class="divider">/</span></li>
+  <li><a href="#">Каталог</a> <span class="divider">/</span></li>
+  <li><a href="#">Палатки</a> <span class="divider">/</span></li>
+  <li class="active">Greenel Веранда Комфорт V2</li>
+</ul>
+
+
+</div>
+
+<div class="container-fluid">
+<div class="row capt-row-top">
+   
+    <a href="#catalog.html" class="visible-sm visible-xs back-arrow"><img src="img/arrow-mobile.png"></a><h1 class="capt">Greenel Веранда Комфорт V2</h1>
+</div>
+<div class="row hidden-xs hidden-sm">
+<div class="col-sm-7 col-md-8 col-lg-6 col-sm-offset-5 col-md-offset-4 col-lg-offset-6 price-tovar-cart-container">
+
+			<h2 class="price-tovar-cart">15 000<span class="glyphicon glyphicon-ruble"></span></h2>
+
+<a href="#" class="pull-right compare-link">К сравнению</a>
+<a href="#" class="btn-order pull-right">Купить</a>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-md-6 img-item col-sm-12 hidden-xs hidden-sm">
+		<div id="tovarCartCarousel" class="carousel slide">
+        <ol class="carousel-toggle tovar-prew-toggle">
+            <li data-target="#tovarCartCarousel" data-slide-to="0" class="active green-bord"><img src="img/prew-1.png"></li>
+            <li data-target="#tovarCartCarousel" data-slide-to="1"><img src="img/prew-2.png"></li>
+            <li data-target="#tovarCartCarousel" data-slide-to="2"><img src="img/prew-3.png"></li>
+            <li data-target="#tovarCartCarousel" data-slide-to="3"><img src="img/prew-4.png"></li>
+            <li data-target="#tovarCartCarousel" data-slide-to="4"><img src="img/prew-5.png"></li>
+        </ol>
+		    <div class="carousel-inner">
+		        <div class="active item">
+                    <button data-toggle="modal" data-target="#modalItem-1" class="btn-scale"><img src="img/scale-img.png"></button>
+		            <img src="img/item-cart-main.png" class="">
+		        </div>
+		        <div class="item">
+                     <button data-toggle="modal" data-target="#modalItem-2" class="btn-scale"><img src="img/scale-img.png"></button>
+		            <img src="img/prew-2.png" class="img-responsive">
+		        </div>
+		        <div class="item">
+                     <button data-toggle="modal" data-target="#modalItem-3" class="btn-scale"><img src="img/scale-img.png"></button>
+		            <img src="img/prew-3.png" class="img-responsive">
+		        </div>
+		        <div class="item">
+                     <button data-toggle="modal" data-target="#modalItem-4" class="btn-scale"><img src="img/scale-img.png"></button>
+		            <img src="img/prew-4.png" class="img-responsive">
+		        </div>
+		        <div class="item">
+                     <button data-toggle="modal" data-target="#modalItem-5" class="btn-scale"><img src="img/scale-img.png"></button>
+		            <img src="img/prew-5.png" class="img-responsive">
+		        </div>
+		        
+		    </div>
+		    
+		</div>
+		<script src="script/gallery.js">
+        </script>
+		
+		
+		
+        
+        
+        <div class="modal fade" id="modalItem-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+           
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <img src="img/item-cart-main.png" class="img-responsive">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="modal fade" id="modalItem-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+           
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <img src="img/prew-2.png" class="img-responsive">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="modal fade" id="modalItem-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+           
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <img src="img/prew-3.png" class="img-responsive">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="modal fade" id="modalItem-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+           
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <img src="img/prew-4.png" class="img-responsive">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="modalItem-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+           
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <img src="img/prew-5.png" class="img-responsive">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        
+        
+        
+		
+		
+	</div>
+	<div class="visible-xs visible-sm">
+	    <div id="myCarousel" class="carousel slide mobile-carousel" data-intervar="3000">
+	        <ol class="carousel-toggle carousel-indicators carousel-indicators-2">
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	        </ol>
+	        <div class="carousel-inner">
+	            <div class="active item">
+	                <img src="img/item-tovar-cart.jpg" class="img-responsive">
+	                
+	            </div>
+	            <div class="item">
+	                <img src="img/item-tovar-cart.jpg" class="img-responsive">
+	                
+	            </div>
+	            <div class="item">
+	                <img src="img/item-tovar-cart.jpg">
+	            </div>
+	            
+	        </div>
+	        
+	        
+	    </div>
+	    
+	    
+	    
+	    
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="col-xs-12 col-sm-12 text-center visible-xs visible-sm mobile-caption"><h2><strong>15000<span class="glyphicon glyphicon-ruble"></span></strong></h2></div>
+	<div class="col-xs-12 col-sm-12 mobile-btn text-center visible-xs visible-sm"><a href="#" class="btn-order">Купить</a></div>
+	<div class="col-md-6 oglavl-block col-xs-12 col-sm-12">
+		<ul class="oglavl">
+    <li>
+        <span class="text">Размер палатки</span>
+        <span class="page">450см<sup>2</sup>220см</span>
+    </li>
+    <li>
+        <span class="text">Высота</span>
+        <span class="page">180см</span>
+    </li>
+    <li>
+        <span class="text">Размер каждой комнаты</span>
+        <span class="page">220см<sup>2</sup>750см</span>
+    </li>
+       <li>
+        <span class="text">Ткань тента</span>
+        <span class="page">190Т полиэстр</span>
+    </li>
+     <li>
+        <span class="text">Водононепроницаемый слой</span>
+        <span class="page">3000мм</span>
+    </li>
+      <li>
+        <span class="text">Внутренняя палатка</span>
+        <span class="page">190Т полиэстр</span>
+    </li>
+    <li>
+        <span class="text">Пол</span>
+        <span class="page">150D Оксворд</span>
+    </li>
+    <li>
+        <span class="text">Водононепроницаемый слой</span>
+        <span class="page">2000мм</span>
+    </li>
+    <li>
+        <span class="text">Дуги</span>
+        <span class="page">8,5мм FIBRGLASS</span>
+    </li>
+</ul>
+	</div>
+			<div class="col-md-6 about col-xs-12 col-sm-12 col-md-offset-6">
+	<h3>Описание</h3>
+	<p>Летняя горная палатка. Пригодна для велосипедного туризма, треккинга, кемпинга
+Умный песок не имеет запаха, срока годности и может радовать вас очень долго.
+Все дети, без исключения, обожают играть с песком, даже взрослые не могут 
+оставаться равнодушными.</p>
+	</div>
+	</div>
+	
+	
+
+	<div class="row bottom-block-cart">
+
+	</div>
+	<div class="row social-row social-like">
+	<div class="col-md-6 col-md-offset-6 col-xs-12 col-sm-12">
+	<div class="row">
+	<div class="social-cart social-cart-fb">
+	<a href="#"><span>12</span></a>
+	</div>
+	<div class="social-cart social-cart-vk">
+	<a href="#"><span>89</span></a>
+	</div>
+	<div class="social-cart social-cart-tw">
+	<a href="#"><span>79</span></a>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-6 item-alt col-xs-12 col-sm-12">
+	<h3>Сопутствующие товары</h3>
+      <div class="pull-right arrow-bottom hidden-xs hidden-sm">
+       <a href=""><img src="img/arrow-tovar-cart-right.png"></a>
+       <a href=""><img src="img/arrow-tovar-cart-left.png"></a>
+        </div>
+        
+       
+	</div>
+	<div class="col-md-6 hidden-xs tovar-cart-review hidden-sm">
+	<h3>Добавить отзыв к товару</h3>	
+	</div>
+	</div>
+	<div class="row item-bottom-2">
+		<div class="col-md-3 col-xs-6 col-sm-6 tovar-cart-alt-item">
+		<div class="prew-cont">
+			<img src="img/catelok.png" class="img-responsive">
+            </div>
+			<div class="tovar-cart-about-bottom">
+				<p>
+					Котелок алюминевый, из него можно есть
+				</p>
+				
+			</div>
+			<div class="row">
+                <p class="price tovar-cart-price-bottom">500<span class="glyphicon glyphicon-ruble"></span></p></div>
+			<div class="row visible-xs item-bottom-2-btn visible-sm">
+					<a href="#" class="btn-order-cart-bottom btn-hover">Купить</a>
+				</div>
+		</div>
+		
+			<div class="col-md-3 col-xs-6 col-sm-6 tovar-cart-alt-item">
+			<div class="prew-cont">
+			<img src="img/kovea.png" class="img-responsive">
+                </div>
+			<div class="tovar-cart-about-bottom">
+				<p>
+					Газовая гарелка
+				</p>
+				
+				
+			</div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-4 col-sm-4">
+			<p class="price tovar-cart-price-bottom" style="color: #eb3131;">500<span class="glyphicon glyphicon-ruble"></span></p>
+                    </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <p class="price tovar-cart-price-bottom" style="color: #c4c4c4;"><del>950</del><span class="glyphicon glyphicon-ruble"></span></p></div>
+                    
+                    
+                </div>
+                
+			<div class="row visible-xs item-bottom-2-btn visible-sm">
+					<a href="#" class="btn-order-cart-bottom btn-hover">Купить</a>
+				</div>
+				
+		</div>
+        
+		<div class="col-md-6 review col-xs-12 col-sm-12">
+<h3 class="hidden-md hidden-lg">Добавить отзыв к основному товару</h3>
+		<div class="row review-bottom">
+           
+			<span style="margin-right: 5%;">Ваша оценка</span>
+			<span class="glyphicon glyphicon-star gold-star star"></span>
+			<span class="glyphicon glyphicon-star gold-star star"></span>
+			<span class="glyphicon glyphicon-star gold-star star"></span>
+			<span class="glyphicon glyphicon-star star"></span>
+			<span class="glyphicon glyphicon-star star"></span>
+			</div>
+			<div class="row"> 
+			<p>А вот здесь пишем отзыв</p>
+			</div>
+
+
+			<form method="post" id="rewiewForm">
+<div class="row">
+
+			<input type="text" id="review-form" required name="rewiew"></div>
+			<div class="row submit-row">
+			<img src="img/capch.png" class="hidden-xs hidden-sm">
+                <input type="text" id="capch-area" class="pull-rigth hidden-xs hidden-sm" required name="captch">
+			<input type="submit" value="отправить" class="pull-right">
+			</div>
+				</form>
+			</div>
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+<footer class="main-footer">
+<div class="row">
+    <div class="col-sm-3 payment-catalog hidden-xs hidden-sm">
+        <p>
+            Мы принимаем к оплате: 
+        </p>
+        <img src="img/payment-all.png">
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 contact-catalog">
+       <p>Санкт-Петербург, пр. Большевиков, 632</p>
+        <h3>+7 (812) 123-45-67</h3>
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 copyright-catalog">
+        <p>Сайт создан бесплатно на 1С-UMI</p>
+        <p>Работает на UMI.CMS</p>
+        
+        
+    </div>
+    
+      <div class="col-sm-12 col-xs-12 col-md-3 social-catalog">
+        
+        <div class="row">
+            	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/fb.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/vk.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/tw.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/inst.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/in.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/g.png"></a>
+	</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+</footer>
+   <script src="script/script.js"></script>
+    </body>
+</html>
+
+
+	
+

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title></title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+
+  
+<script src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div id="call" class="modal fade">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">
+                    Заказать обратный звонок
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callForm">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="text" name="phone" placeholder="Ваш телефон" required>
+                    <input type="submit" value="Заказать">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="container-fluid hidden-xs hidden-sm">
+<div class="row hidden-xs header-row hidden-sm">
+<div class="col-lg-3 col-md-3 col-sm-3 logo">
+    <div class="logo-container">
+        <a href="index.html" class="pull-left"><img src="img/logo1.png" class="img-responsive"></a></div>
+<h2 class="pull-left">Турмаг</h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 contact">
+<img src="img/phone.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h2>+7(812) 123-45-67</h2>
+<a href="#call" data-toggle="modal"><small>заказать бесплатный звонок</small></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 work-time">
+<img src="img/clock1.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h5>Режим работы</h5>
+<span>ПН-ПТ С 10:00-20:00</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="form-group">
+<form role="form" style="margin-top: 10px;">
+<input type="search" class="form-control">
+</form>
+</div>
+<div class="" style="margin-right: 7%;">
+<a href="log.html" style="display: block; margin-top: 4px;" ><img src="img/search-logo-people.png" class="img-responsive"></a>
+</div>
+<div class="cart-sticker">
+<a href="cart.html" style="display: block;"><img src="img/search-icon.png" class="img-responsive"></a>
+</div>
+
+
+</div>
+
+
+</div>
+</header>
+<div class="container-fluid slide-menu-container">
+<div class="row visible-xs header-mobile visible-sm">
+<div class="cont">
+<div class="toggle-menu" id="toggle-btn">
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+</div>
+<div class="logo-mobile clearfix">
+
+<div>
+<img src="img/logo-mobile.png">
+
+<div class="">
+<h2 class="pull-left">Турмаг</h2>
+</div>
+</div>
+</div>
+<div class="cart-mobile sticker-mobile">
+	 <a href="cart.html"><img src="img/mobile-cart.png" class="img-responsive"></a>
+</div>
+</div>
+</div>
+
+
+
+		<ul class="left-menu visible-xs visible-sm" id="slide-menu">
+		<div class="btn-close pull-right" id="btn-menu-close"><img src="img/close.png"></div>
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class=""><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			<li class=""><a href="#">Одежда и обувь</a></li>
+			<li class=""><a href="#">Аксессуары</a></li>
+            
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+
+		</ul>
+
+</div>
+<script type="text/javascript" src="script/menu.js"></script>
+
+<div class="container-fluid">
+
+<div class="nav-cont btn-group btn-group-justified hidden-xs hidden-sm">      
+	<nav class="nav-cont-1">
+		<ul class="nav nav-justified navbar ">
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class="hidden-md"><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			
+			<li class="hidden-md"><a href="#">Аксессуары</a></li>
+			<li class="arrow dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">еще<i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 1px;"></i>
+</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">что то еще</a></li>
+
+
+               <li class="visible-md"><a href="#">Одежда и обувь</a></li>
+			<li class="visible-md"><a href="#">Аксессуары</a></li>
+               <li class="visible-md"><a href="#">Спальные мешки</a></li>
+                
+                </ul>
+            
+            
+            </li>
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+		</ul>
+	</nav>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid main-container">
+	<div class="main clearfix row">
+        	<div class="main-img col-md-8 col-lg-8 col-sm-8 col-xs-12 clearfix">
+			
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-toggle carousel-indicators pull-left">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+	
+            </ol>
+            <div class="carousel-inner">
+                <div class="active item">
+                    
+                    <div class="carousel-caption">
+                        <h1>Товары</h1>
+                        <h2>Для туризма и отдыха</h2>
+                        <p>В нашем магазине Турмаг мы посторались собрать наиболее востребованные товары для туризма и активного отдыха</p>
+                    </div>
+                </div>
+                <div class="item">
+                  
+                 
+                    <div class="carousel-caption">
+                        <h1>Товары</h1>
+                        <h2>Для туризма и отдыха</h2>
+                        <p>В нашем магазине Турмаг мы посторались собрать наиболее востребованные товары для туризма и активного отдыха</p>
+                    </div>
+                </div>
+                <div class="item">
+                 
+                <div class="carousel-caption">
+                        <h1>Товары</h1>
+                        <h2>Для туризма и отдыха</h2>
+                        <p>В нашем магазине Турмаг мы посторались собрать наиболее востребованные товары для туризма и активного отдыха</p>
+                        </div>
+                    </div>
+                </div>
+                 
+
+
+
+
+
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true" style="font-size: 80px"></i>
+
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true" style="font-size: 80px;"></i>
+
+                </a>
+            </div>
+			 
+				
+            
+         </div>
+		
+		<div class="right-top-img col-md-4 col-lg-4 col-sm-4 hidden-xs" id="rightTopBlock">
+		
+		<h1>
+		<a href="news.html">	<h1>Новости <br>и акции
+                <br><br>
+                <hr></h1>
+            </a>
+            </h1>
+				
+				
+				
+				
+            
+				
+	</div>
+	<div class="right-bottom-img col-md-4 col-lg-4 col-sm-4 hidden-xs" id="rightBottomBlock">
+		
+		
+<a href="">		<h1>О магазине
+            <br><br>
+            <hr></h1>
+        </a>
+		
+		
+		
+		
+	</div>
+            
+</div>
+</div>
+<div class="item-top container">
+<div class="row">
+	<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        
+	<div class="media">
+           <div class="media-body">
+	<h1 class="media-heading">Лодки</h1>
+	<p  class="hidden-xs hidden-sm">Отлично плавают и никогда не тонут!</p>
+        </div>
+
+        <a href="#" class="media-right">
+        <img src="img/item-1.png" class="media-object img-responsive">
+        </a>
+     
+	
+        </div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+	
+        <div class="media">
+            <div class="media-body">
+	<h1 class="media-heading">Палатки</h1>
+	<p  class="hidden-xs hidden-sm">На любой вкус иw цвет!</p>
+</div>
+<a href="#" class="media-right">
+	<img src="img/item2.png" class="img-responsive media-object">
+    </a>
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-6 hidden-xs">
+	<div class="media">
+        <div class="media-body">
+	<h1 class="media-heading">Спальные мешки</h1>
+	<p  class="hidden-xs hidden-sm">И для зимы и для лета!</p>
+        </div>
+
+<a href="#" class="media-right">
+	<img src="img/item-13.png" class="img-responsive">
+        </a>
+    </div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-6 hidden-xs">
+	<div class="media">
+        <div class="media-body">
+	<h1 class="media-heading">Рюкзаки</h1>
+	<p class="hidden-xs hidden-sm">От прогулочных до туристических!</p>
+        </div>
+    
+<a href="#" class="media-right">
+	<img src="img/item-9.png" class="img-responsive">
+    </a>
+    </div>
+</div>
+</div>
+	</div>
+    <div>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-xs-12">
+	<ul class="cat nav nav-tabs" role="tablist">
+		<li class="active"><a href="#special" aria-controls="special" role="tab" data-toggle="tab" class="active" id="special-controls">Спецпредложения</a></li>
+		<li><a href="#popular" data-toggle="tab" aria-controls="popular" role="tab" id="popular-controls">Популярные товары</a></li>
+	</ul>
+        </div>
+        </div>
+        </div>
+	<div class="item-bottom  tab-content clearfix container-fluid main-item-bottom">
+		<div class="tab-pane active" id="special" role="tabpanel">
+	
+	
+            
+            
+            
+            
+       <div class="main-catalog main-catalog-item">     
+            
+<div class="row item-container">
+   
+    <div class="col-xs-6 col-sm-6 col-md-3 sticker">
+        <img src="img/item-cart-2.png" class="img-responsive">
+        <p class="caption-item-catalog">Палатка Alaska Винд 3. 
+Цвет синий и желтый</p>
+        <div class="clearfix">
+            <p class="st-price">4200 <span class="glyphicon glyphicon-ruble"></span></p></div>
+   <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+   <div class="order-button-catalog visible-xs visible-sm"><a href="#">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-special2.png" class="img-responsive">
+        <p class="caption-item-catalog">Палатка туристическая 3-х местная с тамбуром KD 912</p>
+            <p class="clearfix"><span class="red-price">650 <span class="glyphicon glyphicon-ruble"></span></span> <span class="old-price"><del>950<span class="glyphicon glyphicon-ruble"></span></del></span></p>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+            <div class="order-button-catalog visible-xs visible-sm"><a href="#">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 sticker">
+        <img src="img/item-special-4.png" class="img-responsive">
+        <p class="caption-item-catalog">Хантер 290 Р. Это резиновая лодка с названием в две строки</p>
+            <div class="clearfix"> <p class="st-price">15600 <span class="glyphicon glyphicon-ruble"></span></p></div>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+   <div class="order-button-catalog visible-xs visible-sm"><a href="#">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-special-3.png" class="img-responsive">
+        <p class="caption-item-catalog">Футболка RedFox Amplitude LS </p>
+            <p class="clearfix"><span class="double-price">2960 <span class="glyphicon glyphicon-ruble"></span></span><span class="old-price"><del>3850<span class="glyphicon plyphicon-ruble"></span></del></span></p>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+            <div class="order-button-catalog visible-xs visible-sm"><a href="#">Заказать</a></div>
+    </div>
+
+
+ 
+            </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+</div>
+ <div class="tab-pane" id="popular" role="tabpanel">
+	
+	
+            
+            
+            
+            
+       <div class="main-catalog">     
+            
+<div class="row item-container">
+   
+    <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-cart-2.png" class="img-responsive">
+        <p class="caption-item-catalog">Палатка Alaska Винд 3. 
+Цвет синий и желтый</p>
+        <div class="clearfix">
+            <p class="st-price">4200 <span class="glyphicon glyphicon-ruble"></span></p></div>
+   <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>            
+   <div class="order-button-catalog visible-xs visible-sm"><a href="#">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-cart-1.png" class="img-responsive">
+        <p class="caption-item-catalog">Палатка туристическая 3-х местная с тамбуром KD 912</p>
+            <p class="clearfix"><span class="red-price">650 <span class="glyphicon glyphicon-ruble"></span></span> <span class="old-price"><del>950<span class="glyphicon glyphicon-ruble"></span></del></span></p>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#">Заказать</a></div>
+            <div class="order-button-catalog visible-xs visible-sm"><a href="#" class="btn-hover">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-cart-3.png" class="img-responsive">
+        <p class="caption-item-catalog">Палатка Totem Tepee</p>
+            <div class="clearfix"> <p class="st-price">15600 <span class="glyphicon glyphicon-ruble"></span></p></div>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+   <div class="order-button-catalog visible-xs visible-sm"><a href="#" class="btn-hover">Заказать</a></div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3">
+        <img src="img/item-cart-4.png" class="img-responsive">
+        <p class="caption-item-catalog">Футболка RedFox Amplitude LS </p>
+            <p class="clearfix"><span class="double-price">2960 <span class="glyphicon glyphicon-ruble"></span></span><span class="old-price"><del>3850<span class="glyphicon plyphicon-ruble"></span></del></span></p>
+             <div class="hidden-xs hidden-sm order-button-catalog hide-btn"><a href="#" class="btn-hover">Заказать</a></div>
+            <div class="order-button-catalog visible-xs visible-sm"><a href="#" class="btn-hover">Заказать</a></div>
+    </div>
+
+
+ 
+            </div>
+            </div>
+        </div>
+        
+
+	
+
+
+	
+	
+
+</div>
+        </div>
+    
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+	<div class="row-fluid clearfix float-block">
+		<div class="main-block col-md-3 col-lg-3 col-sm-12 bottom-block col-xs-12">
+			<h2>В нашем интернет магазине Turmag.ru мы постарались собрать наиболее востребованные товары для отдыха.</h2>
+			<p>У нас вы найдете большой выбор туристического снаряжения для походов любой сложности.</p>
+			<p>Любой из представленных в магазине товаров, мы привезем в любую точку Санкт-Петербурга, области и региона, по самым низким ценам в городе! Почему такая цена?Да хотя бы потому, что интернет-магазин не платит за аренду. 
+			<p>Собираетесь в поход? А что главное в походе - взять с собой все необходимое, что бы занимало как можно меньше места и не весило совсем.</p>
+		</div>
+		<div class="news-block col-md-3 col-lg-3 col-sm-12 bottom-block col-xs-12">
+			<h1>Новости</h1>
+			<div class="top-news">
+         <span>14.08.2014</span>
+         <h2>Акция</h2>
+         <p>Наступила последняя неделя лета, осень уже стучится к нам в дом.</p>
+         <p>До 1 сентября мы обьявляем скидки до 10% на аминокислоты и комплексы.
+			</div>
+			<hr>
+
+			<div class="bottom-news">
+				<span>14.08.2014</span>
+				<h2>В каталог добавлены новые разделы</h2>
+				<p>Теперь в нашем интернет магазине вы можете приобрести тренажеры для домашнего использования и для загородного дома лучших российских и зарубежных производителей</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-12 right-news-block bottom-block bottom-block-right col-sx-12">
+             <div classs="row">
+             	<div class="col-md-6 col-sm-6 col-lg-8  col-sm-offset-3 col-lg-offset-1" style="text-align: center;">
+                    <div>
+			<p>Мы всегда найдем интересующий вас товар и предложим по наименьшей цене.</p>
+			<p><strong>Всегда рады вам помочь</strong></p>
+                    </div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+		
+	<div class="adventage-block container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-lg-3 col-sm-12 prewiew-block col-sx-12">
+				<div class="row">
+				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+					<img src="img/mail-icon-2.png" class="img-responsive">
+				</div>
+				<div class="col-md-8 col-lg-8 col-sm-8  prewiev-block-1 bag-1 col-xs-8">
+
+				<p>На всю продукцию магазина имеются сертификаты</p>
+			</div>
+		</div>
+	</div>
+			
+			<div class="col-md-3 col-lg-3 col-sm-12 prewiew-block prewiev-block-1 col-xs-12">
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 ad">
+						<img src="img/del-icon.png" class="img-responsive">
+					</div>
+				<div class="col-md-8 col-lg-8 col-sm-8 prewiev-block-1 bag-2 col-xs-8">
+				<p>Бесплатная доставка товара до подьезда(в пределах КАД)</p>
+			</div>
+			</div>
+			</div>
+			
+
+			<div class="col-md-3 col-lg-3 col-sm-12 prewiew-block prewiev-block-1 pull-right col-xs-12">
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+						<img src="img/phone-icon.png" class="img-responsive">
+					</div>
+				<div class="col-md-8 col-lg-8 col-sm-8 prewiev-block-1 bag-3 col-xs-7">
+				<p>Наши менеджеры отвечают на звонки 24/7</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer class="main-footer no-border">
+<div class="row">
+    <div class="col-sm-3 payment-catalog hidden-xs hidden-sm">
+        <p>
+            Мы принимаем к оплате: 
+        </p>
+        <img src="img/payment-all.png">
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 contact-catalog">
+       <p>Санкт-Петербург, пр. Большевиков, 632</p>
+        <h3>+7 (812) 123-45-67</h3>
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 copyright-catalog">
+        <p>Сайт создан бесплатно на 1С-UMI</p>
+        <p>Работает на UMI.CMS</p>
+        
+        
+    </div>
+    
+      <div class="col-sm-12 col-xs-12 col-md-3 social-catalog">
+        
+        <div class="row">
+            	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/fb.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/vk.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/tw.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/inst.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/in.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/g.png"></a>
+	</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+</footer>
+   <script src="script/script.js"></script>
+    </body>
+</html>
+
+
+

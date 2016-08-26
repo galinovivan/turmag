@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title></title>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	   <script type="text/javascript" src="script/jquery.cookie.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="call" class="modal fade">
+	<div class="modal-dialog modal-xs">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					Заказать обратный звонок
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" id="callForm">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" value="Заказать">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="callbackModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Напишите нам!</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" id="callbackForm">
+					<input type="text" placeholder="Ваше имя" name="name" required>
+					<input type="text" placeholder="Ваш телефон" required>
+					<textarea name="messages" cols="30" rows="6" placeholder="А вот тут-то мы и напишем" required></textarea>
+					<input type="submit" value="ОТПРАВИТЬ">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="container-fluid hidden-xs hidden-sm">
+<div class="row hidden-xs header-row hidden-sm">
+<div class="col-lg-3 col-md-3 col-sm-3 logo">
+    <div class="logo-container">
+        <a href="index.html" class="pull-left"><img src="img/logo1.png" class="img-responsive"></a></div>
+<h2 class="pull-left">Турмаг</h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 contact">
+<img src="img/phone.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h2>+7(812) 123-45-67</h2>
+<a href="#call" data-toggle="modal"><small>заказать бесплатный звонок</small></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 work-time">
+<img src="img/clock1.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h5>Режим работы</h5>
+<span>ПН-ПТ С 10:00-20:00</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="form-group">
+<form role="form" style="margin-top: 10px;">
+<input type="search" class="form-control">
+</form>
+</div>
+<div class="" style="margin-right: 7%;">
+<a href="log.html" style="display: block; margin-top: 4px;" ><img src="img/search-logo-people.png" class="img-responsive"></a>
+</div>
+<div class="cart-sticker">
+<a href="cart.html" style="display: block;"><img src="img/search-icon.png" class="img-responsive"></a>
+</div>
+
+
+</div>
+
+
+</div>
+</header>
+<div class="container-fluid slide-menu-container">
+<div class="row visible-xs header-mobile visible-sm">
+<div class="cont">
+<div class="toggle-menu" id="toggle-btn">
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+	<div class="toggle"></div>
+</div>
+<div class="logo-mobile clearfix">
+
+<div>
+<img src="img/logo-mobile.png">
+
+<div class="">
+<h2 class="pull-left">Турмаг</h2>
+</div>
+</div>
+</div>
+<div class="cart-mobile sticker-mobile">
+	 <a href="cart.html"><img src="img/mobile-cart.png" class="img-responsive"></a>
+</div>
+</div>
+</div>
+
+
+
+		<ul class="left-menu visible-xs visible-sm" id="slide-menu">
+		<div class="btn-close pull-right" id="btn-menu-close"><img src="img/close.png"></div>
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class=""><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			<li class=""><a href="#">Одежда и обувь</a></li>
+			<li class=""><a href="#">Аксессуары</a></li>
+            
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+
+		</ul>
+
+</div>
+<script type="text/javascript" src="script/menu.js"></script>
+
+<div class="container-fluid">
+
+<div class="nav-cont btn-group btn-group-justified hidden-xs hidden-sm">      
+	<nav class="nav-cont-1">
+		<ul class="nav nav-justified navbar ">
+			<li class=""><a href="tovar-cart.html">Лодки</a></li>
+			<li class=""><a href="#">Палатки</a></li>
+			<li class="hidden-md"><a href="#">Спальные мешки</a></li>
+			<li class=""><a href="#">Рюкзаки</a></li>
+			
+			<li class="hidden-md"><a href="#">Аксессуары</a></li>
+			<li class="arrow dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">еще<i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 1px;"></i>
+</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">что то еще</a></li>
+
+
+               <li class="visible-md"><a href="#">Одежда и обувь</a></li>
+			<li class="visible-md"><a href="#">Аксессуары</a></li>
+               <li class="visible-md"><a href="#">Спальные мешки</a></li>
+                
+                </ul>
+            
+            
+            </li>
+			<li class="nav-small"><a href="#">О нас</a></li>
+			<li class="nav-small"><a href="news.html">Новости и акции</a></li>
+			<li class="nav-small"><a href="#">Оплата и доставка</a></li>
+			<li class="nav-small"><a href="#">Блог</a></li>
+			<li class="nav-small"><a href="contact.html">Контакты</a></li>
+		</ul>
+	</nav>
+</div>
+    </div>
+
+
+
+
+
+
+<div class="container-fluid cart-container">
+	<div class="row row-item-cart row-item-cart-capt">
+		<h1>Ваша корзина</h1>
+	</div>
+	<a href="#callbackModal" class="callback hidden-xs hidden-sm hidden-md" data-toggle="modal">Обратная связь</a>
+	<div class="row item-row-page">
+		<div class="col-md-3 cart-item-1 col-xs-6 col-sm-6">
+			<img src="img/item1.png" class="img-responsive">
+		</div>
+		<div class="col-md-3 hidden-xs hidden-sm">
+			<div class="cart-item-price">
+				<p>Палатка Alaska Винд 3.  Цвет синий и желтый </p>
+            <h3 id="itemPrice-1">15 600<span class="glyphicon glyphicon-ruble"></span></h3>
+            </div>
+		</div>
+		<div class="col-md-2 hidden-xs hidden-sm">
+			<div class="row">
+	<div class="col-md-12  col-xs-12 col-sm-12">
+	<div class="row inc clearfix">
+	<a id="minCount"><img src="img/minus.png" class="img-responsive"></a>
+	<span id="count">1 шт.</span> 
+	<a id="maxCount"><img src="img/plus.png" class="img-responsive"></a>
+	
+	</div>
+</div>
+</div>
+
+</div>
+
+<div class="col-xs-5 col-sm-5 visible-xs visible-sm">
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-10 close-btn-cart col-sm-3 col-sm-offset-10">
+			<a href="#" class=""><img src="img/close-icon.png" class="img-responsive"></a>
+		</div>
+	</div>
+	<div class="row about-item-cart">
+		<p>Палатка Alaska Винд 3.  Цвет синий и желтый </p>
+        
+
+	</div>
+
+	<div class="row">
+		<a href="#" class="bg-container hidden-xs hidden-sm"><span>1шт.</span></a>
+        <div class="visible-xs visible-sm"><div class="row inc clearfix">
+	<a><img src="img/minus.png" class="img-responsive"></a>
+	<span id="count">1 шт.</span> 
+	<a><img src="img/plus.png" class="img-responsive"></a>
+	
+	</div></div>
+	</div>
+	
+	<div class="row price-mobile-cart">
+		<h3>15 600<span class="glyphicon glyphicon-ruble"></span></h3>
+	</div>
+	</div>
+		<div class="col-md-3 hidden-xs hidden-sm">
+			
+				<div class="col-md-9 cart-item-price hidden-xs hidden-sm">
+					
+					<h3 id="finalPrice-1" style="display: inline-block">15 600</h3><span class="glyphicon glyphicon-ruble"></span>
+
+				</div>
+				<div class="col-md-3 close-btn-cart">
+					<a href="#"><img src="img/close-icon.png" class="img-responsive"></a>
+				
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="row item-row-page">
+		<div class="col-md-3 cart-item-1 col-xs-6 col-sm-6">
+			<img src="img/item-3.png" class="img-responsive">
+		</div>
+		<div class="col-md-3 hidden-xs hidden-sm">
+			<div class="cart-item-price">
+				<p>Хантер 290 Р. Это резиновая лодка с названием в две строки </p>
+            <h3  id="item-price-2"  style="display: inline-block">25 000</h3><span class="glyphicon glyphicon-ruble"></span>
+            </div>
+		</div>
+		<div class="col-md-2 hidden-xs hidden-sm">
+			<div class="row">
+	<div class="col-md-12  col-xs-12 col-sm-12">
+	<div class="row inc clearfix">
+	<a id="minCount-2"><img src="img/minus.png" class="img-responsive"></a>
+	<span id="count-2">2 шт.</span> 
+	<a id="maxCount-2"><img src="img/plus.png" class="img-responsive"></a>
+	
+	</div>
+</div>
+</div>
+
+</div>
+
+<div class="col-xs-5 col-sm-5 visible-xs visible-sm">
+	<div class="row">
+		<div class="col-xs-3 col-xs-offset-10 close-btn-cart col-sm-3 col-sm-offset-10">
+			<a href="#" class=""><img src="img/close-icon.png" class="img-responsive"></a>
+		</div>
+	</div>
+	<div class="row about-item-cart">
+		<p>Палатка Alaska Винд 3.  Цвет синий и желтый </p>
+        
+
+	</div>
+
+	<div class="row">
+		<a href="#" class="bg-container hidden-xs hidden-sm"><span>1шт.</span></a>
+        <div href="#" class="visible-xs visible-sm"><div class="row inc clearfix">
+	<a id="minCount-2"><img src="img/minus.png" class="img-responsive"></a>
+	<span id="count2">2 шт.</span> 
+	<a id="maxCount-2"><img src="img/plus.png" class="img-responsive"></a>
+	
+	</div></div>
+	</div>
+	
+	<div class="row price-mobile-cart">
+		<h3>50 000<span class="glyphicon glyphicon-ruble"></span></h3>
+	</div>
+	</div>
+		<div class="col-md-3 hidden-xs hidden-sm">
+			
+				<div class="col-md-9 cart-item-price hidden-xs hidden-sm">
+					
+					<h3 style="display: inline-block;" id="finalPrice-2">50 000</h3><span class="glyphicon glyphicon-ruble"></span>
+
+				</div>
+				<div class="col-md-3 close-btn-cart">
+					<a href="#"><img src="img/close-icon.png" class="img-responsive"></a>
+				
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		<div class="row cart-submit">
+         <div class="col-md-offset-8 col-md-4 cart-no-flex final-price">
+         	<div class="row">
+         		<div class="col-xs-5 col-xs-offset-6 col-sm-offset-7 col-sm-5 col-md-offset-0">
+         	<h5>Сумма заказа</h5>
+         </div>
+         
+         <div class="row">
+         	<div class="col-xs-5 price-cart col-sm-5 col-md-9 col-xs-offset-6 col-sm-offset-6 col-md-offset-0">
+         	<h1 id="orderPrice">65 600<span class="glyphicon glyphicon-ruble"></span></h1>
+         </div>
+         </div>
+            </div>
+    
+         <div class="hidden-xs hidden-sm col-md-12">
+
+         	<a href="order.html" class="cart-order-button" id="priceOrder">Оформить заказ</a>
+         </div>
+            </div>
+          <div class="visible-xs visible-sm">
+          	<div class="col-xs-12 col-sm-12">
+
+         	<a href="order.html" class="cart-order-button" style="width: 100%; margin-top: 5%;">Оформить заказ</a>
+         </div>
+         </div>
+         
+
+         </div>
+    </div>
+  
+		
+		
+
+
+
+
+
+<footer class="main-footer">
+<div class="row">
+    <div class="col-sm-3 payment-catalog hidden-xs hidden-sm">
+        <p>
+            Мы принимаем к оплате: 
+        </p>
+        <img src="img/payment-all.png">
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 contact-catalog">
+       <p>Санкт-Петербург, пр. Большевиков, 632</p>
+        <h3>+7 (812) 123-45-67</h3>
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 copyright-catalog">
+        <p>Сайт создан бесплатно на 1С-UMI</p>
+        <p>Работает на UMI.CMS</p>
+        
+        
+    </div>
+    
+      <div class="col-sm-12 col-xs-12 col-md-3 social-catalog">
+        
+        <div class="row">
+            	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/fb.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/vk.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/tw.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/inst.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/in.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/g.png"></a>
+	</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+</footer>
+
+   <script src="script/script.js"></script>
+    </body>
+</html>
+
+
+
+

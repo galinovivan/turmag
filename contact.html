@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title></title>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="call" class="modal fade">
+	<div class="modal-dialog modal-xs">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					Заказать обратный звонок
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form method="post" id="callForm">
+					<input type="text" name="name" placeholder="Ваше имя" required>
+					<input type="text" name="phone" placeholder="Ваш телефон" required>
+					<input type="submit" value="Заказать">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="container-fluid hidden-xs hidden-sm">
+<div class="row hidden-xs header-row hidden-sm">
+<div class="col-lg-3 col-md-3 col-sm-3 logo">
+    <div class="logo-container">
+        <a href="index.html" class="pull-left"><img src="img/logo1.png" class="img-responsive"></a></div>
+<h2 class="pull-left">Турмаг</h2>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 contact">
+<img src="img/phone.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h2>+7(812) 123-45-67</h2>
+<a href="#call" data-toggle="modal"><small>заказать бесплатный звонок</small></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 work-time">
+<img src="img/clock1.png" class="img-responsive pull-left">
+<div class="pull-left">
+<h5>Режим работы</h5>
+<span>ПН-ПТ С 10:00-20:00</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="form-group">
+<form role="form" style="margin-top: 10px;">
+<input type="search" class="form-control">
+</form>
+</div>
+<div class="" style="margin-right: 7%;">
+<a href="log.html" style="display: block; margin-top: 4px;" ><img src="img/search-logo-people.png" class="img-responsive"></a>
+</div>
+<div class="cart-sticker">
+<a href="cart.html" style="display: block;"><img src="img/search-icon.png" class="img-responsive"></a>
+</div>
+
+
+</div>
+
+
+</div>
+</header>
+<div class="container-fluid slide-menu-container">
+<div class="row visible-xs header-mobile visible-sm">
+<div class="cont">
+<div class="toggle-menu" id="toggle-btn">
+  <div class="toggle"></div>
+  <div class="toggle"></div>
+  <div class="toggle"></div>
+</div>
+<div class="logo-mobile clearfix">
+
+<div>
+<img src="img/logo-mobile.png">
+
+<div class="">
+<h2 class="pull-left">Турмаг</h2>
+</div>
+</div>
+</div>
+<div class="cart-mobile sticker-mobile">
+   <a href="cart.html"><img src="img/mobile-cart.png" class="img-responsive"></a>
+</div>
+</div>
+</div>
+
+
+
+    <ul class="left-menu visible-xs visible-sm" id="slide-menu">
+    <div class="btn-close pull-right" id="btn-menu-close"><img src="img/close.png"></div>
+      <li class=""><a href="tovar-cart.html">Лодки</a></li>
+      <li class=""><a href="#">Палатки</a></li>
+      <li class=""><a href="#">Спальные мешки</a></li>
+      <li class=""><a href="#">Рюкзаки</a></li>
+      <li class=""><a href="#">Одежда и обувь</a></li>
+      <li class=""><a href="#">Аксессуары</a></li>
+            
+      <li class="nav-small"><a href="#">О нас</a></li>
+      <li class="nav-small"><a href="news.html">Новости и акции</a></li>
+      <li class="nav-small"><a href="#">Оплата и доставка</a></li>
+      <li class="nav-small"><a href="#">Блог</a></li>
+      <li class="nav-small"><a href="contact.html">Контакты</a></li>
+
+    </ul>
+
+</div>
+<script type="text/javascript" src="script/menu.js"></script>
+
+<div class="container-fluid">
+
+<div class="nav-cont btn-group btn-group-justified hidden-xs hidden-sm">      
+  <nav class="nav-cont-1">
+    <ul class="nav nav-justified navbar ">
+      <li class=""><a href="tovar-cart.html">Лодки</a></li>
+      <li class=""><a href="#">Палатки</a></li>
+      <li class="hidden-md"><a href="#">Спальные мешки</a></li>
+      <li class=""><a href="#">Рюкзаки</a></li>
+      
+      <li class="hidden-md"><a href="#">Аксессуары</a></li>
+      <li class="arrow dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">еще<i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 1px;"></i>
+</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">что то еще</a></li>
+
+
+               <li class="visible-md"><a href="#">Одежда и обувь</a></li>
+      <li class="visible-md"><a href="#">Аксессуары</a></li>
+               <li class="visible-md"><a href="#">Спальные мешки</a></li>
+                
+                </ul>
+            
+            
+            </li>
+      <li class="nav-small"><a href="#">О нас</a></li>
+      <li class="nav-small"><a href="news.html">Новости и акции</a></li>
+      <li class="nav-small"><a href="#">Оплата и доставка</a></li>
+      <li class="nav-small"><a href="#">Блог</a></li>
+      <li class="nav-small"><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<ul class="breadcrumb breadcrumb-catalog hidden-xs hidden-sm">
+  <li><a href="#"><span class="glyphicon glyphicon-home"></span></a> <span class="divider">/</span></li>
+  <li class="active">Контакты</li>
+</ul>
+
+
+
+
+
+
+<div class="container-fluid">
+<div class="row cont-capt">
+    <h1>Контакты</h1>
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="container-fluid contact-header hidden-xs hidden-sm">
+	<div class="row">
+		<div class="col-md-3 contact-contact">
+			<div><p>195990 г. Санкт-Петербург,</p>
+				<p>Санкт-Петербург, пр. Большевиков, 632
+			</div>
+
+		</div>
+		<div class="col-md-3">
+			<div><p><strong>+7(499) 703-39-00</strong></p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div><p>ourskype</div>
+		</div>
+		<div class="col-md-3">
+			<div><p>info@turmag.ru</p></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid contact-header visible-xs visible-sm">
+	<div class="row">
+		<div class="col-xs-12">
+			<div><p>195990 г. Санкт-Петербург,</p>
+				<p>Санкт-Петербург, пр. Большевиков, 632
+			</div>
+
+		</div>
+		<div class="col-xs-12">
+			<div><p><strong>+7(812) 123-45-67</strong></p>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div><p>ourskype</div>
+		</div>
+		<div class="col-xs-12">
+			<div><p>info@turmag.ru</p></div>
+		</div>
+	</div>
+</div>
+	
+<div class="container-fluid contact-main">
+<div class="row" style="margin: 0;">
+	<div class="col-md-6">
+		<div id="map">
+		    
+		</div>
+		<script type="text/javascript">
+				function initMap() {
+				var latitude = 59.901369,
+		longitude = 30.487572,
+		map_zoom = 18;
+				var style = [
+				{
+				    featureType: "all",
+    stylers: [
+      { saturation: -100 }
+    ]
+  },{
+    featureType: "water",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#c0dbef" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "on" }
+    ]
+  }
+				];
+					var map_options = {
+      	center: new google.maps.LatLng(latitude, longitude),
+      	zoom: map_zoom,
+      	panControl: false,
+      	zoomControl: false,
+      	mapTypeControl: false,
+      	streetViewControl: false,
+      	mapTypeId: google.maps.MapTypeId.ROADMAP,
+      	scrollwheel: true,
+      	styles: style
+    }
+    	var map = new google.maps.Map(document.getElementById('map'), map_options);
+    	var image = 'img/marker.png';
+				var beachMarker = new google.maps.Marker({
+					position: new google.maps.LatLng(latitude, longitude),
+					map: map,
+					icon: image,
+				});
+			}
+			
+
+          
+
+		</script>
+	
+		
+	</div>
+ <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wYZn36Y2XGUlY7Y_tlq67p_5JitUj2c&callback=initMap">
+    </script>
+	<div class="col-md-6 contact-form">
+		<div class="row">
+			<h1>Напишите нам с сайта!</h1>
+		</div>
+		<div class="row">
+		<form>
+			
+          <input type="text" id="name-2" placeholder="Как вас зовут" required><label for="name-2"></label>
+
+
+          <input type="text" id="contact-data" placeholder="почта или телефон" required><label for="contact-data"></label>
+     
+          <textarea id="opt-2" rows="8" placeholder="А вот тут-то мы и напишем" required></textarea><label for="opt-2"></label>
+    
+    
+          <input type="submit" value="отправить" class="btn-mail-submit btn-hover">
+      
+		</form>
+	</div>
+	</div>
+</div>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+<div class="row">
+    <div class="col-sm-3 payment-catalog hidden-xs hidden-sm">
+        <p>
+            Мы принимаем к оплате: 
+        </p>
+        <img src="img/payment-all.png">
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 contact-catalog">
+       <p>Санкт-Петербург, пр. Большевиков, 632</p>
+        <h3>+7 (812) 123-45-67</h3>
+        
+        
+        
+    </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 copyright-catalog">
+        <p>Сайт создан бесплатно на 1С-UMI</p>
+        <p>Работает на UMI.CMS</p>
+        
+        
+    </div>
+    
+      <div class="col-sm-12 col-xs-12 col-md-3 social-catalog">
+        
+        <div class="row">
+            	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/fb.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/vk.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/tw.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/inst.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/in.png"></a>
+	</div>
+	<div class="col-xs-2 col-sm-2">
+		<a href="#"><img src="img/g.png"></a>
+	</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+</footer>
+   <script src="script/script.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,83 @@
+@import "varible";
+@import "mixin";
+@import "buttons";
+
+
+
+
+//adaptive
+@media screen and (min-width: 991px) {
+  .contact-header {
+    & > div {
+      & > div {
+        height: 275px;
+      }
+    }
+    .contact-contact {
+      div {
+        padding-left: 30px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  #myCarousel {
+    .carousel-inner {
+      height: 480px;
+    }
+  }
+  .main-catalog {
+    p:not(.caption-item-catalog) {
+      padding-top: 0;
+    }
+    .transparent_button {
+      margin-bottom: 40px;
+    }
+  }
+  .prewiew-block {
+    padding: 50px 30px;
+    p {
+      font-size: @baseFontSize + 2;
+    }
+  }
+  ul.oglavl {
+    li {
+      span.text,
+      span.page {
+        font-size: @baseFontSize;
+      }
+    }
+  }
+  .about p {
+    font-size: @baseFontSize;
+  }
+  .item-bottom-2 {
+    .submit-row {
+      .align(right);
+    }
+  }
+  .order-form label {
+    font-size: @baseFontSize + 2;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 991px) {
+  .main-catalog {
+    & > .row {
+      & > div {
+        padding: 0 5%;
+      }
+    }
+  }
+}
+.mar_60 {
+  margin: 50px auto;
+}
+//
+
+.capt {
+ text-transform: uppercase !important;
+}

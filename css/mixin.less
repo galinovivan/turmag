@@ -1,0 +1,31 @@
+.align(@align: center) {
+  text-align: @align;
+}
+.transition(@what: all, @time: 0.4s) {
+  -webkit-transition: @what @time;
+  -moz-transition: @what @time;
+  -ms-transition: @what @time;
+  -o-transition: @what @time;
+  transition: @what @time;
+}
+.margin_align() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.placeholder_style(@color: @black, @size: 16px) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+}
+.moz_placeholder_style(@color: @black; @size: 16px) {
+  &::-moz-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+  &:-moz-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+}
